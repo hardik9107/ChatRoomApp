@@ -143,7 +143,7 @@ public class RMIChatServer extends UnicastRemoteObject implements ChatServerInte
 			
 		}
 	}
-	public ChatClientInterface giveRef(String name)
+	public ChatClientInterface giveRef(String name)		//gives reference of the user for private messaging
 	{
 		ClientInfo ci = new ClientInfo(name,null);
 		int index = v.indexOf(ci);

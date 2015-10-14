@@ -85,7 +85,7 @@ public class RMIChatServer extends UnicastRemoteObject implements ChatServerInte
 			}
 		}
 	}
-	public void broadcastMsg(ChatroomInfo crm,String msg)
+	public void broadcastMsg(ChatroomInfo crm,String msg)		//broadcast to all clients in chatroom crm
 	{
 		Enumeration<ClientInfo> en = crm.chatroomClients.elements();
 		while(en.hasMoreElements())
@@ -143,7 +143,7 @@ public class RMIChatServer extends UnicastRemoteObject implements ChatServerInte
 			
 		}
 	}
-	public ChatClientInterface giveRef(String name)
+	public ChatClientInterface giveRef(String name)		//gives reference of the user for private messaging
 	{
 		ClientInfo ci = new ClientInfo(name,null);
 		int index = v.indexOf(ci);
