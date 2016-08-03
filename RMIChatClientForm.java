@@ -15,7 +15,7 @@ public class RMIChatClientForm extends JFrame implements ChatClientInterface,Act
 	JList listChatrooms, listClients;
 	JTextField jtf;
 	JButton jbtn;
-	JScrollPane jsp1, jsp2, jsp3;
+	JScrollPane jsp1, jsp2, jsp4;
 	DefaultListModel model,model1;
 	//String key = "rmi://192.168.2.4:1099/sample";
 	String key = "rmi://localhost:1099/sample";
